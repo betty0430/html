@@ -1,37 +1,24 @@
 <html>
     <head>
         <title>
-            註冊
+            文字大小寫
         </title>
+         <style>
+             <!--
+            text-transform 設定文字大小寫
+            uppercase   大寫   lowercase   小寫   capitalize   段落自首大寫
+             -->
+             h1{ text-transform: uppercase;
+                 background-color: #ff6a00;
+                 color: #808080;
+                 box-shadow:2px 2px 3px red;}
+             h2{text-transform: lowercase}
+             h3{text-transform: capitalize}
+        </style>
     </head>
     <body>
-        <form method="GET" action="regist.php">
-            姓名:<input type="text" name=id><br>
-            密碼:<input type="password"  name="pwd"><br>
-            性別:
-            <input type="radio" name="sex" value="g" checked>女
-            <input type="radio" name="sex" value="m">男
-            <input type="radio" name="sex" value="a">多元<br>
-            <!-- id=100  &  pwd=gfdg100  &  sex=m-->
-            興趣:<input type="checkbox" name="interest" value="tv">看電視
-            <input type="checkbox" name="interest" value="movie">看電影
-            <input type="checkbox" name="interest" value="bike">騎車
-            <input type="checkbox" name="interest" value="book">看書<br>
-            地址:
-            <select name="county">
-                <option value="taoyuan">桃園</option>
-                <option value="hsinchu" selected>新竹縣/市</option>
-                <!--                    預設第一個-->
-                <option value="miaoll">苗栗</option>
-                <option value="other">其他</option>
-            </select><br>
-            自傳:<br>
-            <textarea name="autobiography" rows="10" cols="40">
-                請輸入自傳
-            </textarea>
-            <p></p>
-            <input type="submit" value="註冊">
-            <input type="reset" value="清除">
-        </form>
+        <h1>This is some text in a paragraph.</h1>
+        <h2>This is some text in a paragraph.</h2>
+        <h3>This is some text in a paragraph.</h3>
     </body>
 </html>
