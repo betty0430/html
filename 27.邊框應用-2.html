@@ -1,20 +1,32 @@
 <html>
     <head>
         <title>
-            登入
+            邊框應用-2
         </title>
+        <style>
+            <!--
+            margin 設定上下左右距離
+            ex:
+            top上方元素距離  botton下方元素距離  left左方元素距離  right右方元素距離(px)
+
+            border 設定上下左右屬性
+            ex:
+            style  線條格式  width  線條寬度  color  顏色  radius  圓角設定(px)
+
+            padding 設定上下左右距離
+            ex:
+            top內部元素上方距離  botton內部元素下方距離
+            left內部元素左方距離  right內部元素右方距離(px)
+             -->
+            div{ border-width:10px;
+                border-color:black;
+                border-style:solid;
+                margin:20px;
+                padding:50px;
+            }
+        </style>
     </head>
     <body>
-        <!--       GET/POST        程式碼   -->
-        <form method="POST" action="login.php">
-            <!--             可輸入的方框(12345顯示:12345)-->
-            帳號:<input type="text" name="id"><br>
-            <!--             可輸入的方框(12345顯示:.....)-->
-            密碼:<input type="password" name="pwd"><p>
-            <input type="submit" value="登入">
-            <!--        送出               -->
-            <input type="reset" value="清除">
-            <!--         重製             -->
-        </form>
+        <div> margin,border,padding</div>
     </body>
 </html>
