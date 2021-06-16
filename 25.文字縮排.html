@@ -1,20 +1,19 @@
 <html>
     <head>
         <title>
-            登入
+            文字縮排
         </title>
+        <style>
+            <!--
+            text-indent 設定段落首字縮排
+             -->
+            #p1{text-indent:3em}
+            #p2{ text-indent:3em;margin-left:3em;}
+        </style>
     </head>
     <body>
-        <!--       GET/POST        程式碼   -->
-        <form method="POST" action="login.php">
-            <!--             可輸入的方框(12345顯示:12345)-->
-            帳號:<input type="text" name="id"><br>
-            <!--             可輸入的方框(12345顯示:.....)-->
-            密碼:<input type="password" name="pwd"><p>
-            <input type="submit" value="登入">
-            <!--        送出               -->
-            <input type="reset" value="清除">
-            <!--         重製             -->
-        </form>
+        <p id="p1">今天增加219例確診個案，全部都是本土新增案例、境外移入0例，另新增22例死亡，苗栗今天增16案例，比過去幾天明顯下降，似乎電子廠的疫情逐漸受到控制。指揮官陳時中表示，連續兩天確診病例數都差不多200多例，但我們沒有放鬆的本錢，疫情仍然嚴峻，大家一定要謹慎以對。</p>
+        < p id="p2">今天增加219例確診個案，全部都是本土新增案例、境外移入0例，另新增22例死亡，苗栗今天增16案例，比過去幾天明顯下降，似乎電子廠的疫情逐漸受到控制。指揮官陳時中表示，連續兩天確診病例數都差不多200多例，但我們沒有放鬆的本錢，疫情仍然嚴峻，大家一定要謹慎以對。</p>
+
     </body>
 </html>
