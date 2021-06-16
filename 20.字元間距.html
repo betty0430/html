@@ -1,37 +1,22 @@
 <html>
     <head>
         <title>
-            註冊
+            字元間距
         </title>
+        <style>
+            <!--
+            letter-spacing 字元間距
+            word-spacing 字的間距
+             -->
+            #ls1 {letter-spacing: 1em}
+            #ls2 {letter-spacing: -5px}
+            #ls1 {word-spacing: 5em}
+        </style>
     </head>
     <body>
-        <form method="GET" action="regist.php">
-            姓名:<input type="text" name=id><br>
-            密碼:<input type="password"  name="pwd"><br>
-            性別:
-            <input type="radio" name="sex" value="g" checked>女
-            <input type="radio" name="sex" value="m">男
-            <input type="radio" name="sex" value="a">多元<br>
-            <!-- id=100  &  pwd=gfdg100  &  sex=m-->
-            興趣:<input type="checkbox" name="interest" value="tv">看電視
-            <input type="checkbox" name="interest" value="movie">看電影
-            <input type="checkbox" name="interest" value="bike">騎車
-            <input type="checkbox" name="interest" value="book">看書<br>
-            地址:
-            <select name="county">
-                <option value="taoyuan">桃園</option>
-                <option value="hsinchu" selected>新竹縣/市</option>
-                <!--                    預設第一個-->
-                <option value="miaoll">苗栗</option>
-                <option value="other">其他</option>
-            </select><br>
-            自傳:<br>
-            <textarea name="autobiography" rows="10" cols="40">
-                請輸入自傳
-            </textarea>
-            <p></p>
-            <input type="submit" value="註冊">
-            <input type="reset" value="清除">
-        </form>
+        <h1>這是正常的字元間距</h1>
+        <h1 id=id1>這是較寬的字元間距</h1>
+        <h1 id=id2>這是較窄的字元間距</h1>
+        <h1 id=id3>This is a book. </h1>
     </body>
 </html>
